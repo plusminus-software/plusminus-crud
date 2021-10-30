@@ -18,12 +18,10 @@ package software.plusminus.crud.controller;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import software.plusminus.crud.service.CrudService;
-import software.plusminus.populate.Populate;
 
 @SuppressWarnings("squid:S00119")
 public abstract class CrudController<T, ID> implements CrudApi<T, ID> {
 
-    @Populate
     private CrudService<T, ID> service;
 
     public CrudController() {

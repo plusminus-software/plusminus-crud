@@ -15,7 +15,6 @@
  */
 package software.plusminus.crud.service;
 
-import company.plusminus.patch.service.PatchService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Answers;
@@ -36,6 +35,7 @@ import software.plusminus.crud.exception.PatchException;
 import software.plusminus.crud.exception.UpdateException;
 import software.plusminus.crud.model.Update;
 import software.plusminus.crud.repository.CrudRepository;
+import software.plusminus.patch.service.PatchService;
 
 import java.util.Collections;
 import java.util.Optional;

@@ -59,22 +59,17 @@
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
         <dependency>
-            <groupId>company.plusminus</groupId>
-            <artifactId>plusminus-generator</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>software.plusminus</groupId>
             <artifactId>plusminus-utils</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>software.plusminus</groupId>
-            <artifactId>plusminus-populate</artifactId>
+            <artifactId>plusminus-inject</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>company.plusminus</groupId>
+            <groupId>software.plusminus</groupId>
             <artifactId>plusminus-patch</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

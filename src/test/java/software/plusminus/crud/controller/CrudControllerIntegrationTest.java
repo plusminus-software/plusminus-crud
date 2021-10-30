@@ -33,7 +33,7 @@ import software.plusminus.check.util.JsonUtils;
 import software.plusminus.crud.TestController;
 import software.plusminus.crud.TestEntity;
 import software.plusminus.crud.service.CrudService;
-import software.plusminus.populate.PopulateAnnotationBeanPostProcessor;
+import software.plusminus.inject.InjectBeanPostProcessor;
 import software.plusminus.util.ResourceUtils;
 
 import java.util.Collections;
@@ -50,7 +50,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static software.plusminus.check.Checks.check;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest({ TestController.class, PopulateAnnotationBeanPostProcessor.class })
+@WebMvcTest({ InjectBeanPostProcessor.class, TestController.class })
 @ActiveProfiles("test")
 public class CrudControllerIntegrationTest {
 

@@ -18,7 +18,7 @@ package software.plusminus.crud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = { "software.plusminus.crud", "software.plusminus.populate" })
+@SpringBootApplication(scanBasePackages = { "software.plusminus.crud", "software.plusminus.inject" })
 public class TestApplication {
     public static void main(String[] args) {
         SpringApplication.run(TestApplication.class, args);

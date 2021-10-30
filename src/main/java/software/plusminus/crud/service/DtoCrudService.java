@@ -15,7 +15,6 @@
  */
 package software.plusminus.crud.service;
 
-import company.plusminus.patch.service.PatchService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import software.plusminus.crud.exception.CreateException;
@@ -24,7 +23,7 @@ import software.plusminus.crud.exception.PatchException;
 import software.plusminus.crud.exception.UpdateException;
 import software.plusminus.crud.model.Update;
 import software.plusminus.crud.repository.CrudRepository;
-import software.plusminus.populate.Populate;
+import software.plusminus.patch.service.PatchService;
 import software.plusminus.util.EntityUtils;
 
 import javax.validation.Validator;
@@ -32,13 +31,9 @@ import javax.validation.Validator;
 @SuppressWarnings("squid:S00119")
 public abstract class DtoCrudService<DTO, E, ID> implements CrudService<DTO, ID>  {
 
-    @Populate
     private PatchService patchService;
-    @Populate
     private DtoConverter<DTO, E> converter;
-    @Populate
     private Validator validator;
-    @Populate
     private CrudRepository<E, ID> repository;
 
     public DtoCrudService() {
