@@ -1,2 +1,2 @@
 # plusminus-crud
-Implement CRUD in a few minutes.
+Set of CRUD listeners for plusminus-data.
