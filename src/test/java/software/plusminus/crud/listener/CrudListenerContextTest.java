@@ -42,7 +42,7 @@ class CrudListenerContextTest {
                 boolean readListenerTriggered,
                 boolean createListenerTriggered,
                 CrudAction writeListenerTriggered) {
-        listenerContext.afterRead(object);
+        listenerContext.onRead(object);
         check(testReadListener.isTriggered()).is(readListenerTriggered);
         check(testCreateListener.isTriggered()).is(createListenerTriggered);
         check(testWriteListener.getLastAction()).is(writeListenerTriggered);

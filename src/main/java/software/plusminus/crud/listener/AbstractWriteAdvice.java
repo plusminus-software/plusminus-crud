@@ -7,6 +7,6 @@ public interface AbstractWriteAdvice<T> extends Listener<T> {
 
     @Override
     default Joinpoint joinpoint() {
-        return WriteJoinpoint.BEFORE;
+        return CrudJoinpoint.BEFORE;
     }
 }
