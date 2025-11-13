@@ -11,6 +11,11 @@ public class CrudListenerContext {
 
     private ListenerContext listenerContext;
 
+    public <T> void onSingleRead(T object) {
+        listenerContext.listen(object, ReadListener.class, ReadListener::onSingleRead,
+                Joinpoint.DEFAULT, CrudJoinpoint.BEFORE, CrudJoinpoint.AFTER);
+    }
+
     public <T> void onRead(T object) {
         listenerContext.listen(object, ReadListener.class, ReadListener::onRead,
                 Joinpoint.DEFAULT, CrudJoinpoint.BEFORE, CrudJoinpoint.AFTER);
